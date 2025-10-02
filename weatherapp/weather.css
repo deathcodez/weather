@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    
+      width: 100%;
+    min-height: 100vh;       /* full screen height */
+    background-image: url('mollusk-sand-blue-background.jpg');
+    background-size: cover;   /* cover entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.input{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.input input{
+    padding: 10px;
+    border-color: rgb(174, 235, 235);
+    border-width: 1px;
+    border-radius: 2px;
+    margin-right: 3px;
+    color: none;
+    cursor: pointer;
+    border-style:outset;
+}
+.input input:focus{
+    border-color: aqua ;
+    outline: none;
+    box-shadow: -5px 5px 10px rgb(95, 194, 216);
+
+}
+
+.input button{
+    padding: 10px;
+    border-width: 1px;
+    border-radius: 2px;
+    color: azure;
+   translate: transfor;  background: linear-gradient(to right, rgb(3, 212, 181), aqua);
+}
+
+.weatherbox{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 500px;
+ 
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 3px;
+}
+.icon{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.photo{
+   
+    margin-bottom: 0px;
+     width: 100%;
+    max-width: 450px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  
+}
+.photo img {
+     width:calc(100%-200px);        /* ✅ makes image fit parent width */
+  height: auto; 
+ 
+  mix-blend-mode: multiply; /* removes white */
+
+
+  object-fit: contain;   /* fill & crop */
+  object-position: center; /* focus area */
+   display: block;  
+}
+.component{
+    width: 100%;
+    max-width: 300px;
+    
+  
+}
+.coments{
+    margin-top: 20px;
+    font-size:large;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+  width: 300px;
+  height: 100px;
+  position: absolute;   /* absolute inside .photo */
+  top: 10px;            /* distance from top */
+  right: 10px; 
+  z-index: 1;           
+}
+/* .last{
+    width: 100%;
+    object-fit: contain;   
+  object-position: center; 
+   display: block;  
+    
+} */
+ html, body {
+  overflow: hidden;
+  height: 100%;
+}
